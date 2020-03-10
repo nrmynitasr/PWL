@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .flex-container {
+            display: flex;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .header {
+            width: 100%;
+            height: 200px;
+        }
+
+        .header>img {
+            width: 100%;
+            height: 200px;
+            margin: 2px;
+        }
+
+        .menu {
+            overflow: hidden;
+            background-color: rgb(78, 161, 216);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 12), 0 1px 2px rgba(0, 0, 0, 24);
+        }
+
+        .menu a {
+            float: left;
+            display: block;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .menu a:hover {
+            background-color: skyblue;
+        }
+
+        img {
+            width: 300px;
+            height: 200px;
+            border: 4px solid #575D63;
+            padding: 10px;
+            margin: 20px;
+        }
+
+        .column {
+            float: left;
+            width: 100%;
+            padding: 15px;
+        }
+
+        @media screen and (max-width: 600px) {
+
+            .column {
+                width: 100%;
+                padding: 0;
+            }
+
+            .header img {
+                width: 500px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="/img/download.png">
+        </div>
+  
+        <nav class="menu">
+            <a href="/">Home</a>
+            <a href="/profile/profil">Profile</a>
+            <a href="/galeri/galery">Gallery</a>
+</nav>
+        
+    </div>
+    <div class="column">
+        <h1>MY GALLERY is MY ADVENTURES</h1>
+        <img src="https://cdn2.tstatic.net/lampung/foto/bank/images/muncak-pass-pesawaran.jpg"> 
+        <img src="https://fortunaexplore.com/wp-content/uploads/2018/12/lampung-tapak-kera.jpg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Air_Terjun_Nyarai.jpg"> 
+        <img src="https://images.squarespace-cdn.com/content/v1/5743f4feab48de86e90266d4/1523262946034-ZFUXG3GFBFXVSV8BVZFH/ke17ZwdGBToddI8pDm48kL4WrIntsHuCODFzGytxs8sUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcw31z2cKmL83lZVTgYf1Shcnt0pzT4b-h8WwoQ3rX-86z0Q_QpJgDA4jmv5AtYw-J/Asoka+Remadja+Air+Terjun+Waimarang+-4.jpg">
+        <img src="https://4.bp.blogspot.com/-nIaDz7oJA3U/USMcX788gSI/AAAAAAAABpQ/gnptHhHTn5Y/s1600/DSC_0535.JPG"> 
+        <img src="https://yopiefranz.com/wp-content/uploads/2016/06/Taman-kupu-kupu-Gita-Persada-Yopie-Pangkey-9-1024x683.jpg">
+        <img src="https://3.bp.blogspot.com/--gvM7wti2FY/WWI6vCYCOhI/AAAAAAAAENU/OiyQnD5SJzAjrmNuKlZWNqgdws3IBXk2wCK4BGAYYCw/s1600/18839325_10208579482034167_3253182371371456691_n.jpg"> 
+    </div>
+
+
+</body>
+
+</html>
